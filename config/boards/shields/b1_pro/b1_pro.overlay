@@ -7,7 +7,7 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
+        zmk,kscan = &kscan_shield;  // Changed from kscan0
         zmk,matrix_transform = &default_transform;
     };
 
@@ -25,7 +25,7 @@
         >;
     };
 
-    kscan0: kscan {
+    kscan_shield: kscan {  // Changed from kscan0
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         debounce-scan-period-ms = <4>;
