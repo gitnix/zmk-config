@@ -1,0 +1,6 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_B1_PRO
+    def_bool $(shields_list_contains,b1_pro)
+    select ZMK_KEYBOARD_NAME="B1 Pro"
