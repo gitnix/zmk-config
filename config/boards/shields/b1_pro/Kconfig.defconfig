@@ -1,9 +1,0 @@
-# Copyright (c) 2024 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-if SHIELD_B1_PRO
-
-config ZMK_KEYBOARD_NAME
-    default "B1 Pro"
-
-endif
