@@ -1,7 +1,6 @@
-name: Reusable user config build
+name: Build ZMK firmware
 
-on:
-  workflow_call:
+on: [push, pull_request, workflow_dispatch]
     inputs:
       build_matrix_path:
         description: "Path to the build matrix file"
