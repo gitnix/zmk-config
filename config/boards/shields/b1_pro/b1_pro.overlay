@@ -27,7 +27,6 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
         debounce-scan-period-ms = <4>;
         debounce-press-ms = <8>;
@@ -65,4 +64,12 @@
             , <&gpio0 20 GPIO_ACTIVE_HIGH>   //c17
             ;
     };
+};
+
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
 };
